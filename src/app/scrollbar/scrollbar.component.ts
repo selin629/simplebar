@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-scrollbar',
   templateUrl: './scrollbar.component.html',
-  styleUrls: ['./scrollbar.component.sass']
+  styleUrls: ['./scrollbar.component.sass'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ScrollbarComponent implements OnInit {
   title = 'angular';
-  numbers = Array(50).fill(0);
   options = {
     autoHide: false,
     classNames: {
